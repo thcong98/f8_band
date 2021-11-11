@@ -46,6 +46,7 @@ html {
     display: inline-block;
     margin-top: 15px;
     border: none;
+    text-align: center;
 }
 
 .btn:hover {
@@ -88,10 +89,12 @@ html {
 .mt-16 {
     margin-top: 16px !important;
 }
-/* main */
-#wrapper {
 
+.mt-32 {
+    margin-top: 32px !important;
 }
+/* main */
+
 
 
 
@@ -103,6 +106,7 @@ html {
     height: 46px;
     background-color: #000;
     z-index: 1;
+    
 }
 
 #nav {
@@ -163,9 +167,26 @@ html {
 #nav-arrow-down {
     font-size: 14px;
 }
+#header .mobile-menu-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
 #header .search-btn {
     float: right;
     padding: 0 21px;
+    
+}
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+    
+}
+
+#header .mobile-menu-btn:hover .menu-icon {
+    color: #000;
     
 }
 
@@ -173,7 +194,7 @@ html {
     background-color: #f44336;
     cursor: pointer;
 }
-
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
@@ -208,14 +229,11 @@ html {
     font-size: 15px;
 }
 
- 
 
-#content {
-   
-}
 #content .content-section {
     width: 800px;
-    padding: 64px 0 112px ;
+    max-width: 100%;
+    padding: 64px 16px 112px ;
     margin-left: auto;
     margin-right: auto;
 }
@@ -246,7 +264,7 @@ html {
 }
 
 #content .members-list {
-    margin-top: 48px;
+    margin-top: 32px;
 }
 
  #content .member-name {
@@ -294,7 +312,7 @@ html {
 }
 /* Places */
 .places-list {
-    margin-top: 32px;
+    margin-top: 16px;
     
 }
 
@@ -451,6 +469,15 @@ html {
 .contact-infor {
     font-size: 18px;
     line-height: 1.5;
+}
+
+.contact-infor a {
+    color: #101aef;
+    opacity: 0.8;
+}
+
+.contact-infor a:hover {
+    opacity: 1;
 }
 
 .contact-infor i[class*="ti-"] {
